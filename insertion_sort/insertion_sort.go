@@ -12,10 +12,6 @@ package insertionsort
 
 // InsertionSort algorithm applied to the given unsorted list
 func InsertionSort(list []int) []int {
-	if len(list) == 0 {
-		return []int{}
-	}
-
 	for i := 1; i < len(list); i++ {
 		for j := i; j > 0; j-- {
 			if list[j] < list[j-1] {

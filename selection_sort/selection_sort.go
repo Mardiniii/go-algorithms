@@ -17,10 +17,6 @@ package selectionsort
 
 // SelectionSort algorithm applied to the given unsorted list
 func SelectionSort(list []int) []int {
-	if len(list) == 0 {
-		return []int{}
-	}
-
 	for i := 0; i < len(list); i++ {
 		minIndex := i
 		for j := minIndex + 1; j < len(list); j++ {

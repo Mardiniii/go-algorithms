@@ -20,6 +20,10 @@ This repository contains some of my first steps working with Go and implementing
 - Depth first search
 - Dijkstra's algorithm
 
+### Advanced Algoristhms
+- Hanoi's towers problem
+- Sudoku problem
+
 ## Contribute
 
 Feel free to make any comment, pull request, code review, shared post, fork or feedback. Everything is welcome.

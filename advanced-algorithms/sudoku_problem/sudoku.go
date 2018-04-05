@@ -100,7 +100,7 @@ func (s *Sudoku) Solve() bool {
 
 	// Let's try to find a solution for the pending position
 	// in row and col. We will try with digits from 1 to 9
-	for i := 0; i <= 9; i++ {
+	for i := 1; i <= 9; i++ {
 		// Check is the current digit is valid for the given position
 		if s.valid(i, row, col) {
 			// If is valid assign this value to the given position

@@ -19,6 +19,7 @@ This repository contains some of my first steps working with Go and implementing
 ### Graph Algoristhms
 - Depth first search
 - Dijkstra's algorithm
+- Travelling Salesman Problem: It is solved using a dynamic programming approach with O(n^2 * 2^n) time complexity. The code is capable to find the minimum cost but not the optimal path yet.
 
 ### Advanced Algoristhms
 - Hanoi's towers problem

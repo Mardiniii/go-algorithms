@@ -26,14 +26,14 @@ func TestSudoku(t *testing.T) {
 	}
 
 	for _, testCase := range testCases {
-		s := NewSudoku(testCase.problem)
+		grid := NewSudoku(testCase.problem)
 		startTime := time.Now()
-		s.Solve()
+		_, solution := Solve(grid)
 		endTime := time.Now()
 		diff := endTime.Sub(startTime)
 		fmt.Println("total time taken ", diff.Seconds(), "seconds")
 
-		algorithmResult := s.ToString()
+		algorithmResult := ToString(solution)
 
 		if testCase.solution != algorithmResult {
 			t.Errorf("Sudoku is not solved, got: %v, want: %v.", algorithmResult, testCase.solution)

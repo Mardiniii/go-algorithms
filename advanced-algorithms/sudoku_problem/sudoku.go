@@ -11,6 +11,8 @@ const N = 9
 // PENDING used as identifier for pending positions
 const PENDING = 0
 
+var count int
+
 // Sudoku struct contains the grid
 type Sudoku struct {
 	grid [N][N]int
@@ -87,14 +89,16 @@ func (s *Sudoku) valid(n int, row int, col int) bool {
 func NewSudoku(input string) *Sudoku {
 	s := new(Sudoku)
 	s.buildGrid(input)
-
+	count = 0
 	return s
 }
 
 // Solve algorithm
 func (s *Sudoku) Solve() bool {
 	pending, row, col := s.pendingPositions()
+	count++
 	if !pending {
+		fmt.Println("Solve calls:", count)
 		return true
 	}
 
